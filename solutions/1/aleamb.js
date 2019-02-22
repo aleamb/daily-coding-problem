@@ -19,18 +19,18 @@ Bonus: Can you do this in one pass?
 */
 
 module.exports = {
-    solution: function (list, k) {
-        if (list === undefined || list == null || list.length < 2)
-            return false;
-        if (typeof k !== 'number')
-            return false;
-        for (var i = 0; i < list.length - 1; i++) {
-            for (var j = i + 1; j < list.length; j++) {
-                if (list[i] + list[j] === k) {
-                    return true;
-                }
-            }
+  solution: function (list, k) {
+    if (list === undefined || list == null || list.length < 2)
+      return false;
+    if (typeof k !== 'number')
+      return false;
+    for (var i = 0; i < list.length - 1; i++) {
+      for (var j = i + 1; j < list.length; j++) {
+        if (list[i] + list[j] === k) {
+          return true;
         }
-        return false;
+      }
     }
+    return false;
+  }
 }

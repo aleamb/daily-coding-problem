@@ -18,23 +18,23 @@ Follow-up: what if you can't use division?
 */
 
 module.exports = {
-    solution: function (list) {
-        const resultList = [];
-        if (list && list.length > 1) {
-            for (let i = 0; i < list.length; i++) {
-                let result = 1;
-                for (let j = 0; j < list.length; j++) {
-                    if (i != j) {
-                        result = result * list[j];
-                    }
-                }
-                resultList.push(result);
-            }
+  solution: function (list) {
+    const resultList = [];
+    if (list && list.length > 1) {
+      for (let i = 0; i < list.length; i++) {
+        let result = 1;
+        for (let j = 0; j < list.length; j++) {
+          if (i != j) {
+            result = result * list[j];
+          }
         }
-        return resultList;
+        resultList.push(result);
+      }
     }
+    return resultList;
+  }
 }
 
 if (require.main === module) {
-    console.log(module.exports.solution_aleamb([1, 2, 3, 4, 5]));
+  console.log(module.exports.solution_aleamb([1, 2, 3, 4, 5]));
 }
