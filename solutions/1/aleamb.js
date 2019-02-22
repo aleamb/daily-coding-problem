@@ -19,7 +19,7 @@ Bonus: Can you do this in one pass?
 */
 
 module.exports = {
-    addup1: function (list, k) {
+    solution: function (list, k) {
         if (list === undefined || list == null || list.length < 2)
             return false;
         if (typeof k !== 'number')
