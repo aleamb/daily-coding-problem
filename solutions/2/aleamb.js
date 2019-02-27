@@ -32,6 +32,9 @@ module.exports = {
       }
     }
     return resultList;
+  },
+  solutionWithDivision: function(list) {
+
   }
 }
 
