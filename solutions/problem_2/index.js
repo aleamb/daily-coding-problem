@@ -34,7 +34,13 @@ module.exports = {
     return resultList;
   },
   solutionWithDivision: function(list) {
-
+    const resultList = [];
+    if (list && list.length > 1) {
+      for (let i = 0; i < list.length; i++) {
+        
+      }
+    }
+    return resultList;
   }
 }
 
