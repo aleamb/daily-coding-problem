@@ -1,2 +1,3 @@
-# daily-coding-problem-private
-Repository for site Daily Coding Problems (https://www.dailycodingproblem.com/) in collaboration with friends
+# daily-coding-problem
+
+Repository with my solutions from Daily Coding Problem (https://www.dailycodingproblem.com/)
