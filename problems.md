@@ -10,7 +10,7 @@ For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
 
 Bonus: Can you do this in one pass?
 
-[Solution](./solutions/problem_1)
+[Solution](./solutions/problem_001)
 
 #Problem 2
 
@@ -22,7 +22,7 @@ For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120
 
 Follow-up: what if you can't use division?
 
-[Solution](./solutions/problem_1)
+[Solution](./solutions/problem_002)
 
 #Problem 3
 
@@ -46,7 +46,7 @@ The following test should pass:
 node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'
 ```
-[Solution](./solutions/problem_3)
+[Solution](./solutions/problem_003)
 
 ## Problem 27
 
@@ -58,4 +58,4 @@ For example, given the string ``"([])[]({})"``, you should return true.
 
 Given the string ``"([)]"`` or ``"((()"``, you should return false.
 
-[Solution](./solutions/27)
+[Solution](./solutions/problem_027)
