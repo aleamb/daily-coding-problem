@@ -12,7 +12,7 @@ Bonus: Can you do this in one pass?
 
 [Solution](./solutions/problem_001)
 
-#Problem 2
+## Problem 2
 
 This problem was asked by Uber.
 
@@ -24,7 +24,7 @@ Follow-up: what if you can't use division?
 
 [Solution](./solutions/problem_002)
 
-#Problem 3
+## Problem 3
 
 This problem was asked by Google.
 
