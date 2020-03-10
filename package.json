@@ -13,5 +13,10 @@
     "eslint-plugin-node": "^8.0.1",
     "jest": "^24.1.0"
   },
-  "repository": "https://github.com/aleamb/daily-coding-problem"
+  "repository": "https://github.com/aleamb/daily-coding-problem",
+  "jest": {
+    "moduleNameMapper": {
+      "^@solutions(.*)$": "<rootDir>/solutions_js$1"
+    }
+  }
 }
