@@ -2,6 +2,6 @@
 
 Repository with my solutions from Daily Coding Problem (https://www.dailycodingproblem.com/) in Javascript and Lisp
 
-Problems details in [Problems details](problems.md)
+Problems details [here](problems.md)
 
 
