@@ -10,7 +10,8 @@ For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
 
 Bonus: Can you do this in one pass?
 
-[Solution - javascript](./solutions_js/problem_001)
+[Solution - javascript](./solutions/problem_0001.js)
+[Solution - lisp](./solutions/problem_0001.js)
 
 ## Problem 2
 
