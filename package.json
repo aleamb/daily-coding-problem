@@ -16,7 +16,7 @@
   "repository": "https://github.com/aleamb/daily-coding-problem",
   "jest": {
     "moduleNameMapper": {
-      "^@solutions(.*)$": "<rootDir>/solutions_js$1"
+      "^@solutions(.*)$": "<rootDir>/solutions$1"
     }
   }
 }

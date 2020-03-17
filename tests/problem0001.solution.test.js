@@ -1,5 +1,5 @@
 
-const problem1Solution = require('@solutions/problem_001');
+const problem1Solution = require('@solutions/problem_0001');
 
 test('Test in problem description', () => {
   expect(problem1Solution.solution([10, 15, 3, 7], 17)).toBe(true);
