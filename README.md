@@ -1,7 +1,5 @@
 # daily-coding-problem
 
-Repository with my solutions from Daily Coding Problem (https://www.dailycodingproblem.com/) in Javascript and Lisp
+Repository with my solutions to Daily Coding Problem (https://www.dailycodingproblem.com/)
 
 Problems details [here](problems.md)
-
-
