@@ -23,8 +23,8 @@ For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120
 
 Follow-up: what if you can't use division?
 
-[Solution - Javascript](./solutions/problem_0002.js)
-[Solution - Lisp](./solutions/problem_0002.lisp)
+- [Solution - Javascript](./solutions/problem_0002.js)
+- [Solution - Lisp](./solutions/problem_0002.lisp)
 
 ## Problem 3
 
@@ -48,5 +48,5 @@ The following test should pass:
 node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'
 ```
-[Solution - Javascript](./solutions/problem_0003.js)
-[Solution - Lisp](./solutions/problem_0003.lisp)
+- [Solution - Javascript](./solutions/problem_0003.js)
+- [Solution - Lisp](./solutions/problem_0003.lisp)
