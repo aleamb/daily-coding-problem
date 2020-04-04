@@ -19,8 +19,14 @@
 
 (defun solution-with-division-r (ol l)
   (cond ((null l) nil)
-         (t (cons (/ (reduce #'* ol) (car l)) (solution-with-division-r ol (cdr l))))))
+         (t (cons (/ (reduce #'* ol :initial-value 1) (car l)) (solution-with-division-r ol (cdr l))))))
 
 (defun solution-with-division (l) (solution-with-division-r l l))
 
 ;; Solution without division
+
+(defun solution-without-division (l)
+  (mapcar #'(lambda (x) 
+              (reduce #'(lambda (acc e)
+                          (cond ((eq e x) acc) 
+                                  (t (* acc e)))) l :initial-value 1)) l))
