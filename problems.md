@@ -10,8 +10,8 @@ For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
 
 Bonus: Can you do this in one pass?
 
-- [Solution - javascript](./solutions/problem_0001.js)
-- [Solution - lisp](./solutions/problem_0001.lisp)
+- [Solution - Javascript](./solutions/problem_0001.js)
+- [Solution - Lisp](./solutions/problem_0001.lisp)
 
 ## Problem 2
 
@@ -23,7 +23,8 @@ For example, if our input was [1, 2, 3, 4, 5], the expected output would be [120
 
 Follow-up: what if you can't use division?
 
-[Solution JS - javascript](./solutions_js/problem_002)
+[Solution - Javascript](./solutions/problem_0002.js)
+[Solution - Lisp](./solutions/problem_0002.lisp)
 
 ## Problem 3
 
@@ -47,16 +48,5 @@ The following test should pass:
 node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'
 ```
-[Solution - javascript](./solutions_js/problem_003)
-
-## Problem 27
-
-This problem was asked by Facebook.
-
-Given a string of round, curly, and square open and closing brackets, return whether the brackets are balanced (well-formed).
-
-For example, given the string ``"([])[]({})"``, you should return true.
-
-Given the string ``"([)]"`` or ``"((()"``, you should return false.
-
-[Solution - javascript](./solutions_js/problem_027)
+[Solution - Javascript](./solutions/problem_0003.js)
+[Solution - Lisp](./solutions/problem_0003.lisp)
