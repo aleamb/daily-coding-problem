@@ -25,14 +25,32 @@ assert deserialize(serialize(node)).left.left.val == 'left.left'
 
 */
 
-function Node(val, left, right) {
-  this.val = val;
-  this.left = left;
-  this.right = right;
-}
-
-module.exports = {
-  solution: function (list, k) {
-
+class Node {
+  constructor(val, left = null, right = null) {
+    this.val = val;
+    this.left = left;
+    this.right = right;
   }
 }
+
+const serialize = (tree) => {
+    if (!tree) return '-';
+    return `${tree.val} ${this.serialize(tree.left)} ${this.serialize(tree.right)}`;
+}
+
+const _deserialize = (s, pos) => {
+  pos.pos++;
+  if (!s[pos.pos] || s[pos.pos] === '-') {
+    return null;
+  }
+  return new Node(s[pos.pos], _deserialize(s, pos), _deserialize(s, pos));
+}
+
+const deserialize = (s) => {
+  const parts = s.split(/\s/);
+  return _deserialize(parts, { pos : -1 });
+}
+
+exports.serialize = serialize;
+exports.deserialize = deserialize;
+exports.Node = Node;
