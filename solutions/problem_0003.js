@@ -40,10 +40,7 @@ const serialize = (tree) => {
 
 const _deserialize = (nodes) => {
   const state = nodes.next();
-  if (state.done) {
-    return null;
-  }
-  if (state.value[1] === '-') {
+  if (state.done || state.value[1] === '-') {
     return null;
   }
   return new Node(state.value[1], _deserialize(nodes), _deserialize(nodes));
