@@ -38,17 +38,20 @@ const serialize = (tree) => {
     return `${tree.val} ${this.serialize(tree.left)} ${this.serialize(tree.right)}`;
 }
 
-const _deserialize = (s, pos) => {
-  pos.pos++;
-  if (!s[pos.pos] || s[pos.pos] === '-') {
+const _deserialize = (nodes) => {
+  const state = nodes.next();
+  if (state.done) {
     return null;
   }
-  return new Node(s[pos.pos], _deserialize(s, pos), _deserialize(s, pos));
+  if (state.value[1] === '-') {
+    return null;
+  }
+  return new Node(state.value[1], _deserialize(nodes), _deserialize(nodes));
 }
 
 const deserialize = (s) => {
   const parts = s.split(/\s/);
-  return _deserialize(parts, { pos : -1 });
+  return _deserialize(parts.entries());
 }
 
 exports.serialize = serialize;
