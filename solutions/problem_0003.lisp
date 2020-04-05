@@ -25,7 +25,7 @@
 ;;; Solution:
 
 ;;; Tree are encoded as (val (left node) (right node)) None is ()
-;;; Serialized string encoded by levels (deep) but without parenthesis, using '-' as null. This save to implement a parser.
+;;; Serialized string encoded by levels (deep) but without parenthesis, using '-' as null. This save us from to implement a parser.
 
 ;;; Example:
 

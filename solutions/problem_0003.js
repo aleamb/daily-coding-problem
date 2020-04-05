@@ -23,6 +23,20 @@ node = Node('root', Node('left', Node('left.left')), Node('right'))
 assert deserialize(serialize(node)).left.left.val == 'left.left'
 ```
 
+Solution:
+
+Serialized string encoded by levels (deep) but without parenthesis, using '-' as null. This save us from to implement a parser.
+
+ Example:
+
+                  A
+                 / \
+                B   D
+               /
+              C
+
+String: A B C - - - D - -
+
 */
 
 class Node {
