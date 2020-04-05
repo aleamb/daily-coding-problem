@@ -15,6 +15,9 @@
 
 ; Bonus: Can you do this in one pass?
 
+; Solution: for a given number K, check if exists another number on list that added to current in list, sum K
+
+
 (defun solution (l k)
   (some #'(lambda (x)
             (not (eq (member (- k x) l) nil)))
